@@ -6,9 +6,9 @@ var surnames = ['Targarien', 'Mormont', 'Stark', 'Tirell', 'Lannister', 'Arren']
 var city = ['Winterfell', 'Highgarden', 'Dorn', 'Braavos', 'Oldtown', 'Lannisport']
 var title = ['Sir', 'Milady', 'King', 'Your majesty', 'Lord']
 
-this.name = names[Math.round(Math.random() * names.length)] + ' ' + surnames[Math.round(Math.random() * surnames.length)]
-this.city = city[Math.round(Math.random() * city.length)] 
-this.title = title[Math.round(Math.random() * title.length)] 
+this.name = names[Math.round(Math.random() * (names.length-1))] + ' ' + surnames[Math.round(Math.random() * (surnames.length-1))]
+this.city = city[Math.round(Math.random() * (city.length-1))] 
+this.title = title[Math.round(Math.random() * (title.length-1))] 
 }
 
 
