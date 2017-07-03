@@ -3,7 +3,7 @@
 function User() { //constructor for user instances
     var names = ['Robert', 'Ned', 'Jhon', 'Tirion', 'Jamie', 'Sersey', 'Arya', 'Sansa', 'Petir', 'Reyegar']
     var surnames = ['Targarien', 'Mormont', 'Stark', 'Tirell', 'Lannister', 'Arren']
-    this.name = names[Math.round(Math.random() * names.length)] + ' ' + surnames[Math.round(Math.random() * surnames.length)]
+    this.name = names[Math.round(Math.random() * (names.length-1))] + ' ' + surnames[Math.round(Math.random() * (surnames.length-1))]
     this.currentDate = new Date()
     this.lastVisitDate =   new Date(this.currentDate.getFullYear(), this.currentDate.getMonth()+1, Math.round(Math.random() * (this.currentDate.getDate()-1)) , Math.round(Math.random() * this.currentDate.getHours()));
     this.tableDate = this.lastVisitDate.getDate()+'/'+ this.lastVisitDate.getMonth() +'/'+  this.lastVisitDate.getFullYear()
